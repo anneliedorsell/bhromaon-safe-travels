@@ -15,6 +15,55 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    
+    <!--header start -->
+    <header>      
+        <div class="container-header">
+            <div class="header__logo">
+                <h1>BHROMAON</h1>
+                <p>Safe Travel Anywhere</p>
+            </div>
+            <div class="header__search">  
+                <form>
+                    <input type="search" name="search" placeholder="Search Your Travel Destination">                   
+                    <button class="btn btn__search">SEARCH<i class="fa-light fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="header__scroll">
+                <h4>Scroll Down</h4>
+                <h4><i class="fa-light fa-angle-down"></i></h4>
+            </div>             
+        </div>
+        <nav class="container-nav-bar">
+            <div class="nav-bar__logo">
+                <h3><a href="#">BHROMAON</a></h3>
+            </div>
+            <div class="nav-bar__links" id="nav-bar">            
+                <a href="#">WHO WE ARE</a>
+                <a href="#">WHAT WE DO</a>
+                <a href="#">TRAVEL WITH US</a>
+                <a href="#">CONTACT US</a>
+                <a class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>  
+    </header>
+    <!--header end -->
+
+
+
+   
+  
+
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "nav") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "nav";
+            }
+        }
+        </script>   
 </body>
 </html>
