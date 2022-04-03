@@ -18,27 +18,29 @@
     <!--header start -->
     <header>      
         <div class="container-header">
-            <div class="header__logo">
-                <h1>BHROMAON</h1>
-                <p>Safe Travel Anywhere</p>
+            <div class="content-header">
+                <div class="header__logo">
+                    <h1>BHROMAON</h1>
+                    <p>Safe Travel Anywhere</p>
+                </div>
+                <div class="header__search">  
+                    <form>
+                        <input type="text" name="search" placeholder="Search Your Travel Destination">                   
+                        <button class="header__button">SEARCH<i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="header__scroll">
+                    <h4>Scroll Down</h4>
+                    <h4><i class="fa fa-angle-down"></i></h4>
+                </div>
+            </div>                 
+        </div>           
+        <nav class="nav">
+            <div class="nav__logo">
+                <h3>BHROMAON</h3>
             </div>
-            <div class="header__search">  
-                <form>
-                    <input type="search" name="search" placeholder="Search Your Travel Destination">                   
-                    <button class="btn btn__search">SEARCH<i class="fa-light fa-magnifying-glass"></i></button>
-                </form>
-            </div>
-            <div class="header__scroll">
-                <h4>Scroll Down</h4>
-                <h4><i class="fa-light fa-angle-down"></i></h4>
-            </div>             
-        </div>
-        <nav class="container-nav-bar">
-            <div class="nav-bar__logo">
-                <h3><a href="#">BHROMAON</a></h3>
-            </div>
-            <div class="nav-bar__links" id="nav-bar">            
-                <a href="#">WHO WE ARE</a>
+            <div class="nav" id="nav-bar">
+                <a href="#" class="active">WHO WE ARE</a>
                 <a href="#">WHAT WE DO</a>
                 <a href="#">TRAVEL WITH US</a>
                 <a href="#">CONTACT US</a>
@@ -46,7 +48,7 @@
                 <i class="fa fa-bars"></i>
                 </a>
             </div>
-        </nav>  
+        </nav>
     </header>
     <!--header end -->
     <!--main start -->
@@ -70,7 +72,7 @@
                     <img src="images/Shape 1.png" alt="shape of bows">++++++++
                 </div>
                 <div class="icon__search">
-                    <a href="#"><img src="Images/icon-glass.png" alt="magnifying glass">
+                    <a href="#"><img src="images/search.png" alt="magnifying glass">
                     <h2>Search Places</h2></a>
                 </div>
                 <div class="icon__select">
@@ -146,7 +148,7 @@
         </div>
     </footer>
     <!--footer end-->
-    
+
     <script>
         function burgerMenu() {
             let burger = document.getElementById("nav-bar");
